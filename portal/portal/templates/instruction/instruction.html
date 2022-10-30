@@ -1,0 +1,12 @@
+{% extends 'basic.html'%}
+
+{% block title  %} {{instruction}} {% endblock %}
+
+{% block content %}
+    <h1>{{instruction.topic}}</h1>
+    <p>Автор: {{instruction.author}}</p>
+    <p><i>Дата создания: {{instruction.date}}</i></p>
+    <p>Cылка на инструкцию: {{instruction.file_link}}</p>
+
+    
+{% endblock %}

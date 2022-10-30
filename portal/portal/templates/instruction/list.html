@@ -1,0 +1,16 @@
+{% extends 'basic.html' %}
+
+{% block title %} Инструкции {% endblock %}
+
+{% block content %}
+    <h2>Инструкции</h2>
+    {% if all_insrtructions %}
+
+        {% for instruction in all_insrtructions %}
+            <a href ="{% url 'instruction:detail'  instruction.id  %}"> {{instruction}} </a><br>
+
+        {% endfor %}
+
+    {% endif %}
+
+{% endblock %}

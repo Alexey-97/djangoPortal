@@ -1,0 +1,12 @@
+{% extends 'basic.html'%}
+
+{% block title  %} {{question}} {% endblock %}
+
+{% block content %}
+    <h1>{{question.question}}</h1>
+    <p>Категория вопроса: {{question.get_topic_answer_display}}</p>
+    <p>Ответ на вопрос:<br>{{question.answer}}</p>
+    
+
+    
+{% endblock %}
